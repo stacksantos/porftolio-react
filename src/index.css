@@ -1,13 +1,46 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Contrail+One&family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+@import '../src/customCss/animations.css';
+@import '../src/customCss/flex.css';
+
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--dark);
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  color: unset;
+}
+li {
+  list-style: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  /* FONTS */
+  --comfortaa: 'Comfortaa', cursive;
+  --contrail: 'Contrail One', cursive;
+  --jetbrains: 'JetBrains Mono', monospace;
+  --source: 'Source Sans Pro', sans-serif;
+
+  /* COLORS */
+  --dark: #000913;
+  --light: #97c1e7;
+  --bright: #ffdb93;
+  --primary: #003d5c;
+  --secondary: #ffa600;
+
+  /* MAIN GRADIENT */
+  --gradient: linear-gradient(112.28deg, #ffffff 0.24%, #000f1e 100%);
 }
+
+
+
+

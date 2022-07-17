@@ -1,0 +1,46 @@
+#logoSmall
+    width: 16rem
+    position: fixed
+    top: 18px
+    left: 15px
+
+.menuIcon
+    color: white
+    font-size: 5rem
+    position: fixed
+    top: 11px
+    right: 15px
+    cursor: pointer
+
+
+
+
+// rotate animation
+
+.rotate 
+    animation: rotate 0.6s ease-in-out both
+
+@keyframes rotate
+    0% 
+        transform: rotate(0)
+  
+    100% 
+        transform: rotate(360deg)
+        color: var(--secondary)
+
+.rotate-reverse 
+    animation: rotate-reverse 0.6s ease-in-out reverse both
+
+
+@keyframes rotate-reverse 
+    0% 
+        transform: rotate(0)
+        
+  
+    100% 
+        transform: rotate(360deg)
+        color: var(--secondary)
+  
+
+
+

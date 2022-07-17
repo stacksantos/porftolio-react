@@ -1,0 +1,1 @@
+export { default as TapToStart } from './tapToStart/TapToStart'
