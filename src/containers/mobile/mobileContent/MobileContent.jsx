@@ -24,9 +24,9 @@ const MobileContent = () => {
             <br />
             based in <strong className='strong'>Rhode Island</strong>.
           </p>
-          <button id='getInTouch' href='mailto:stacksantos@proton.me'>
+          <a id='getInTouch' href='mailto:stacksantos@proton.me'>
             Get In Touch
-          </button>
+          </a>
         </div>
       </div>
     </>
