@@ -13,10 +13,13 @@ const MobileSocials = () => {
         >
           <BsTwitter />
         </a>
-        <a href='https://github.com/stacksantos'>
+        <a href='https://github.com/stacksantos' target='__blank'>
           <BsGithub className='mobileIcons' />
         </a>
-        <a href='https://www.linkedin.com/in/christopherleesantos/'>
+        <a
+          href='https://www.linkedin.com/in/christopherleesantos/'
+          target='__blank'
+        >
           <BsLinkedin className='mobileIcons' />
         </a>
       </div>

@@ -19,12 +19,14 @@ const MobileContent = () => {
           <h2 id='helloThere'>Hello There</h2>
           <p id='myNameIs'>
             {' '}
-            My name is <strong>Lee</strong>,<br />
-            and I'm a <strong>Software Engineer</strong>
+            My name is <strong className='strong'>Lee</strong>,<br />
+            and I'm a <strong className='strong'>Software Engineer</strong>
             <br />
-            based in <strong>Rhode Island</strong>.
+            based in <strong className='strong'>Rhode Island</strong>.
           </p>
-          <button id='getInTouch' href='mailto:stacksantos@proton.me'>Get In Touch</button>
+          <button id='getInTouch' href='mailto:stacksantos@proton.me'>
+            Get In Touch
+          </button>
         </div>
       </div>
     </>
