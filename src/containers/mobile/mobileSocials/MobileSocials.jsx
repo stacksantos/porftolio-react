@@ -10,17 +10,23 @@ const MobileSocials = () => {
           href='https://twitter.com/stacksantos'
           target='__blank'
           className='mobileIcons'
+          id='twitter'
         >
           <BsTwitter />
         </a>
-        <a href='https://github.com/stacksantos' target='__blank'>
-          <BsGithub className='mobileIcons' />
+        <a
+          href='https://github.com/stacksantos'
+          target='__blank'
+          className='mobileIcons'
+        >
+          <BsGithub />
         </a>
         <a
           href='https://www.linkedin.com/in/christopherleesantos/'
           target='__blank'
+          className='mobileIcons'
         >
-          <BsLinkedin className='mobileIcons' />
+          <BsLinkedin />
         </a>
       </div>
     </>

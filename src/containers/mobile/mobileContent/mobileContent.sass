@@ -1,50 +1,55 @@
 .mobileContainer
-    margin-top: 12rem
-
-    @media  screen and (min-width: 1200px)
-        margin-top: 8rem
+    transition: 600ms ease
 
 .heroSection
     width: 100%
 
 .profilePic
-    width: 200px
+    width: 65%
+    max-width: 600px
     border-radius: 50%
     border: 2px solid white
-
-    @media  screen and (min-width: 1200px)
-        width: 400px
+    @media screen and (max-height:428px)
+        max-width: 140px
+    
 
 #helloThere
-    font-size: 4rem
-    margin-top: 3rem
+    font-size: 7rem
+    margin-top: 15%
     font-family: var(--contrail)
     text-align: center
-
-    @media  screen and (min-width: 1200px)
-        font-size: 6rem
+    @media screen and (max-height:428px)
+        margin-top: 5%
+        font-size: 4rem
+    @media screen and (max-width:428px)
+        font-size: 4rem
 
 #myNameIs
-    font-size: 1.8rem
+    font-size: 2.8rem
     font-family: var(--contrail)
     text-align: center
     margin-top: 2rem
-
-    @media  screen and (min-width: 1200px)
-        font-size: 3rem
+    @media screen and (max-height:428px)
+        margin-top: 0
+        font-size: 2.2rem
+    @media screen and (max-width:428px)
+        font-size: 1.8rem
+    @media screen and (max-width:375px)
+        margin-top: 0
+        font-size: 1.5rem
 
 .strong
-    font-size: 2.2rem
+    font-size: 3.2rem
     color: var(--bright)
+    @media screen and (max-height:428px)
+        font-size: 2.6rem
+    @media screen and (max-width:428px)
+        font-size: 2.3rem
+    @media screen and (max-width:375px)
+        margin-top: 0
+        font-size: 2rem
 
-    @media  screen and (min-width: 1200px)
-        font-size: 3.5rem
 
-
-
-    
-
-        
 #getInTouch
     font-size: 2rem
     font-family: var(--jetbrains)
@@ -63,10 +68,13 @@
     overflow: hidden
     border: 2px solid var(--light)
     color: var(--light)
-
-    @media  screen and (min-width: 1200px)
+    @media  screen and (min-width: 1080px)
+        display: inline-block
         font-size: 3rem
-
+    @media screen and (max-height: 800px)
+        display: none
+    @media screen and (max-width: 799px)
+        display: none
 #getInTouch:hover
     color: black
     border: 2px solid var(--bright)

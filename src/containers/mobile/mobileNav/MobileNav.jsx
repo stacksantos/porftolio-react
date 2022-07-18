@@ -2,6 +2,7 @@ import { React, useState } from 'react';
 import './mobileNav.sass';
 import LogoSmall from '../../../assets/logo-small.png';
 import { GiCompass } from 'react-icons/gi';
+import { ImMail } from 'react-icons/im'
 
 const MobileNav = () => {
   const [menuIcon, setMenuIcon] = useState('menuIcon');
@@ -41,7 +42,8 @@ const MobileNav = () => {
           className={menuIcon}
           onClick={() => setIsToggled(!isToggled)}
         />
-        ;{isToggled && <InitialMenu />}
+        <a href="mailto:stacksantos@proton.me"><ImMail className='email' /></a>
+        {isToggled && <InitialMenu />}
         {isToggled ? <OpenMenu /> : <CloseMenu />}
 
 
