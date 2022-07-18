@@ -17,6 +17,21 @@ const MobileNav = () => {
     setMenuIcon('menuIcon');
   };
 
+  // const MobileLinks = () => {
+  //   <>
+  //     <nav>
+  //       <ul>
+  //         <li className='mobileLink'></li>
+  //         <li className='mobileLink'></li>
+  //         <li className='mobileLInk'></li>
+  //       </ul>
+  //     </nav>
+  //   </>
+  // }
+
+
+
+
 
   return (
     <>
