@@ -26,10 +26,7 @@ const MobileContent = () => {
           <div className='helloContainer col align'>
             <h2 id='helloThere'>Hello There</h2>
             <p id='myNameIs'>
-              My name is <strong className='strong'>Lee</strong>,<br />
-              and I'm a <strong className='strong'>Software Engineer</strong>
-              <br />
-              based in <strong className='strong'>Rhode Island</strong>.
+              My name is Lee <br/> and I'm a Rhode Island based Software Engineer.
             </p>
             {/* <button id='getInTouch'>Get In Touch</button> */}
             <p id='scrollDown' className='blink'>
