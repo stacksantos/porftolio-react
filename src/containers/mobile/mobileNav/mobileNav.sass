@@ -1,3 +1,6 @@
+.mobileNav
+    height: 100%
+
 #logoSmall
     width: 40%
     max-width: 20rem
@@ -26,35 +29,145 @@
         color: var(--secondary)
         transition: 600ms ease
 
+// MOBILE MENU
+
+#mobileMenu
+    width: 100%
+    height: 250px
+    position: fixed
+    top: 80px
+    left: 0
+    color: white
+    background: black
+    padding: 3rem
+    opacity: 0
+
+.mobileMenuContainer
+    height: 100%
+
+.mobileLink
+    padding: .5rem
+    text-transform: uppercase
+    font-size: 3rem
+    font-family: var(--jetbrains)
+    transition: 600ms ease
+    &:hover
+        color: var(--secondary)
+        transition: 600ms ease
 
 
+/* -------------------------------------------------------------------------- */
+/*                                   ROTATE                                   */
+/* -------------------------------------------------------------------------- */
 
-// rotate animation
-
-.rotate 
+.rotate
     animation: rotate 0.6s ease-in-out both
 
 @keyframes rotate
-    0% 
+    0%
         transform: rotate(0)
-  
-    100% 
+
+    100%
         transform: rotate(360deg)
         color: var(--secondary)
 
-.rotate-reverse 
+.rotate-reverse
     animation: rotate-reverse 0.6s ease-in-out reverse both
 
-
-@keyframes rotate-reverse 
-    0% 
+@keyframes rotate-reverse
+    0%
         transform: rotate(0)
-        
-  
-    100% 
+
+    100%
         transform: rotate(360deg)
         color: var(--secondary)
-  
 
+/* -------------------------------------------------------------------------- */
+/*                              MENU SLIDE IN-OUT                             */
+/* -------------------------------------------------------------------------- */
 
+.menuSlideIn
+    -webkit-animation: menuSlideIn 0.6s cubic-bezier(0.23, 1, 0.32, 1) both
+    animation: menuSlideIn 0.6s cubic-bezier(0.23, 1, 0.32, 1) both
 
+@-webkit-keyframes menuSlideIn
+    0% 
+        -webkit-transform: translateX(1000px) scaleX(2.5) scaleY(0.2)
+        transform: translateX(1000px) scaleX(2.5) scaleY(0.2)
+        -webkit-transform-origin: 0% 50%
+        transform-origin: 0% 50%
+        -webkit-filter: blur(40px)
+        filter: blur(40px)
+        opacity: 0
+
+    100%
+        -webkit-transform: translateX(0) scaleY(1) scaleX(1)
+        transform: translateX(0) scaleY(1) scaleX(1)
+        -webkit-transform-origin: 50% 50%
+        transform-origin: 50% 50%
+        -webkit-filter: blur(0)
+        filter: blur(0)
+        opacity: 1
+
+@keyframes menuSlideIn
+    0%
+        -webkit-transform: translateX(1000px) scaleX(2.5) scaleY(0.2)
+        transform: translateX(1000px) scaleX(2.5) scaleY(0.2)
+        -webkit-transform-origin: 0% 50%
+        transform-origin: 0% 50%
+        -webkit-filter: blur(40px)
+        filter: blur(40px)
+        opacity: 0
+
+    100%
+        -webkit-transform: translateX(0) scaleY(1) scaleX(1)
+        transform: translateX(0) scaleY(1) scaleX(1)
+        -webkit-transform-origin: 50% 50%
+        transform-origin: 50% 50%
+        -webkit-filter: blur(0)
+        filter: blur(0)
+        opacity: 1
+
+/* SLIDE OUT */
+
+.menuSlideOut
+    -webkit-animation: menuSlideOut 0.45s cubic-bezier(0.755, 0.05, 0.855, 0.06) both
+    animation: menuSlideOut 0.45s cubic-bezier(0.755, 0.05, 0.855, 0.06) both
+
+@-webkit-keyframes menuSlideOut
+    0% 
+        -webkit-transform: translateX(0) scaleY(1) scaleX(1)
+        transform: translateX(0) scaleY(1) scaleX(1)
+        -webkit-transform-origin: 50% 50%
+        transform-origin: 50% 50%
+        -webkit-filter: blur(0)
+        filter: blur(0)
+        opacity: 1
+
+    100% 
+        -webkit-transform: translateX(1000px) scaleX(2) scaleY(0.2)
+        transform: translateX(1000px) scaleX(2) scaleY(0.2)
+        -webkit-transform-origin: 0% 50%
+        transform-origin: 0% 50%
+        -webkit-filter: blur(40px)
+        filter: blur(40px)
+        opacity: 0
+
+@keyframes menuSlideOut
+    0%
+        -webkit-transform: translateX(0) scaleY(1) scaleX(1)
+        transform: translateX(0) scaleY(1) scaleX(1)
+        -webkit-transform-origin: 50% 50%
+        transform-origin: 50% 50%
+        -webkit-filter: blur(0)
+        filter: blur(0)
+        opacity: 1
+
+    100%
+        -webkit-transform: translateX(1000px) scaleX(2) scaleY(0.2)
+        transform: translateX(1000px) scaleX(2) scaleY(0.2)
+        -webkit-transform-origin: 0% 50%
+        transform-origin: 0% 50%
+        -webkit-filter: blur(40px)
+        filter: blur(40px)
+        opacity: 0
