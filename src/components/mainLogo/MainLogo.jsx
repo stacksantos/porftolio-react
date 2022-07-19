@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { React, useState } from 'react';
 import Logo from '../../assets/icon.png';
 
@@ -7,6 +8,12 @@ const MainLogo = () => {
   const HandleClick = () => {
     setExit('logoExit');
   };
+
+  useEffect(() => {
+    setTimeout(() => {
+      setExit('logoExit')
+    }, 5000);
+  }, [])
 
   return (
     <img

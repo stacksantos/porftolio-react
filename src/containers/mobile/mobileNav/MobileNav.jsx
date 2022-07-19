@@ -2,38 +2,34 @@ import { React, useState } from 'react';
 import './mobileNav.sass';
 import LogoSmall from '../../../assets/logo-small.png';
 import { GiCompass } from 'react-icons/gi';
-import { ImMail } from 'react-icons/im'
+import { ImMail } from 'react-icons/im';
 
 const MobileNav = () => {
   const [menuIcon, setMenuIcon] = useState('menuIcon');
-  const [slideIn, setSlideIn] = useState('')
-  const [isToggled, setIsToggled] = useState('');
+  const [slideIn, setSlideIn] = useState('');
+  const [toggle, setToggle] = useState('');
 
   const OpenMenu = () => {
     setMenuIcon('menuIcon rotate');
-    setSlideIn('menuSlideIn')
-    setIsToggled(true)
+    setSlideIn('menuSlideIn');
+    setToggle(true);
   };
   const CloseMenu = () => {
-    setMenuIcon('menuIcon rotate-reverse')
-    setSlideIn('menuSlideOut')
-    setIsToggled(false)
-  }
-
+    setMenuIcon('menuIcon rotate-reverse');
+    setSlideIn('menuSlideOut');
+    setToggle(false);
+  };
 
   return (
     <>
       <div className='mobileNav'>
         <img src={LogoSmall} alt=' stacksantos logo' id='logoSmall' />
-        <GiCompass
-          className={menuIcon}
-          onClick={() => setIsToggled(!isToggled)}
-        />
+        <GiCompass className={menuIcon} onClick={() => setToggle(!toggle)} />
         <a href='mailto:stacksantos@proton.me'>
-          <ImMail className='email' />
+          <ImMail className='email rollIn' />
         </a>
-        <div className={slideIn} id='mobileMenu'>
-          <nav className='center mobileMenuContainer'>
+        <div className={`mobileMenu ${slideIn}`} id='mobileMenu'>
+          <nav className='center mobileMenuContainer fadeIn'>
             <ul className='col start'>
               <li className='mobileLink'>About Me</li>
               <li className='mobileLink'>Projects/Work</li>
@@ -42,7 +38,7 @@ const MobileNav = () => {
             </ul>
           </nav>
         </div>
-        {isToggled ? <OpenMenu /> : <CloseMenu />}
+        {toggle ? <OpenMenu /> : <CloseMenu />}
       </div>
     </>
   );

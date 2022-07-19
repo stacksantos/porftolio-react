@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { React, useState } from 'react';
 import { TapToStart } from '../../containers';
 import { MobileContent } from '../../containers/mobile';
@@ -11,6 +12,11 @@ const HomePage = () => {
      setStart(<MobileContent />); 
     }, 700);
   };
+  useEffect(() => {
+    setTimeout(() => {
+     setStart(<MobileContent />) 
+    }, 6500);
+  }, [])
 
   return (
     <div className='mainContainer center' onClick={HandleStart}>
