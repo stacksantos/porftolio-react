@@ -41,18 +41,19 @@ const MobileContent = () => {
           <div className='aboutContainer col align'>
             <h3>A little about me:</h3>
             <p>
-              I used to work on cars & shoot portraits for a living. <br />
+              <p id='usedTo'>I used to work on cars & shoot portraits.</p>
               <br />
               Over the years (and after a few injuries) I decided it was time to
               pursue a different career.
               <br />
               <br />
+              <span>
               Developing lets me continue to tinker and create. I get to write
-              code every day, and I've never been happier!
+              code every day, and I've never been happier.</span>
               <br />
               <br />
               Speaking of which, I'd love to hear what website projects you have
-              in mind.
+              in mind!
             </p>
             <a href='mailto:stacksantos@proton.me'>
               <GetInTouch />
@@ -68,7 +69,7 @@ const MobileContent = () => {
             <section className='flex wrap even justify'>
               <div className='col align benefitsItem'>
                 <FaCode className='benefitsIcon' />
-                <h4 className='benefitsTitle'>Always Responsive Code</h4>
+                <h4 className='benefitsTitle'>Always Responsive</h4>
                 <p>
                   Whether it's a phone, tablet, or PC, your website will adapt
                   to any screen size.
@@ -80,7 +81,7 @@ const MobileContent = () => {
                   Modern Design
                 </h4>
                 <p>
-                  BEAUTIFUL WEBSITE STUFF
+                  The web has changed a lot since the dark ages. Don't miss out on all the new technologies available.
                 </p>
               </div>
               <div className='col align benefitsItem'>
@@ -89,7 +90,7 @@ const MobileContent = () => {
                   More traffic
                 </h4>
                 <p>
-                  WE'RE WATCHING YOU
+                  A properly built website will generate more views, which translates to more business for you!
                 </p>
                 
               </div>

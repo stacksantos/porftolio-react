@@ -30,6 +30,7 @@
     margin-top: 9%
     font-family: var(--contrail)
     text-align: center
+    text-shadow: 4px 2px 1px var(--light)
     @media screen and(max-height: 412px)
         margin-top: 5%
     @media screen and(min-width: 650px)
@@ -48,33 +49,6 @@
         margin-top: 3rem
     @media screen and(min-width: 650px)
         font-size: 3rem
-
-
-
-// #getInTouch
-//     font-size: 2rem
-//     font-family: var(--jetbrains)
-//     min-width: 5rem
-//     height: fit-content
-//     margin-top: 3rem
-//     padding: 5px 10px
-//     cursor: pointer
-//     transition: all 0.3s ease
-//     position: relative
-//     display: none
-//     outline: none
-//     border-radius: 10px
-//     background: transparent
-//     overflow: hidden
-//     border: 2px solid var(--light)
-//     color: var(--light)
-//     @media screen and(min-width: 650px)
-//         display: inline-block
-
-// #getInTouch:hover
-//     color: black
-//     border: 2px solid var(--bright)
-//     background: var(--bright)
 
 
 #scrollDown
@@ -98,17 +72,25 @@
 .aboutContainer
     font-family: var(--source)
     width: 65%
-    text-align: center
 
 .aboutContainer h3
     font-family: var(--jetbrains)
-    font-size: 2rem
+    font-size: 3rem
     margin-bottom: 3rem
 
 .aboutContainer p
     font-size: 2rem
     @media screen and(min-width: 700px)
         font-size: 2.5rem
+
+#usedTo
+    font-family: var(--comfortaa)
+    font-size: 2.5rem
+
+.aboutContainer span
+    font-size: 2rem
+    font-family: var(--contrail)
+    color: var(--bright)
 
 /* -------------------------------------------------------------------------- */
 /*                              BENEFITS SECTION                              */
@@ -122,13 +104,14 @@
 
 .benefitsContainer
     font-family: var(--source)
-    width: 100%
+    width: 85%
     height: 100%
-    margin: 5rem
+    margin: 6rem
+    margin-top: 12rem
 
 .benefitsContainer p
-    margin-top: 2rem
-    font-size: 2rem
+    margin-top: 4rem
+    font-size: 1.8rem
     text-align: center
     font-family: var(--comfortaa)
 
@@ -142,21 +125,22 @@
 
 .benefitsTitle
     font-size: 2.3rem
-    margin-top: 2rem
-    font-family: var(--jetbrains)
+    margin-top: 5rem
+    font-family: var(--contrail)
     color: var(--bright)
     text-align: center
 
 .benefitsItem
     margin: 6rem 1.5rem
+    padding: 1rem
     margin-top: 0rem
     flex: 1
 
 // benefits Icons
 
 .benefitsIcon
-    background: var(--bright2)
-    border-radius: 50%
+    background: var(--light2)
+    border-radius: 40px
     border: 4px solid white
     padding: 2rem
     color: black
